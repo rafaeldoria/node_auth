@@ -1,6 +1,6 @@
-**Node com passport
+** Node com passport
 
-* pacotes
+*** pacotes:
 - npm init (package.json)
 - npm install express body-parser morgan method-override --save
 - npm install passport passport-http --save

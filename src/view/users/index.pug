@@ -1,0 +1,22 @@
+extends ./../layout/main
+
+block content
+    div.col-xs-12.col-md-12
+        h2.text-center List All Users
+            table.table.table-striped.table-bordered
+                thead
+                    tr
+                        th Name
+                        th Username
+                        th Email
+                        th Actions
+                tbody
+                    each user in users
+                        tr
+                            td= user.name
+                            td= user.username
+                            td= user.email
+                            td
+                                form(action="/users/" + user._id + "/?_method=DELETE", method="POST")
+                                    button(type="submit", class="btn btn-primary") Delete
+            

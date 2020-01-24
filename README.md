@@ -18,6 +18,7 @@ $ npm install passport passport-http --save
 $ npm install express-session passport-local --save
 $ npm install mongoose pug --save
 $ npm install mongoose-type-email --save
+$ npm install bcrypt-nodejs --save
 ```
 
 ### iniciar mongo

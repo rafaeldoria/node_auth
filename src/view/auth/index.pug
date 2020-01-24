@@ -1,0 +1,12 @@
+extends ./../layout/main
+
+block content
+    div.col-xs-12.col-md-12
+        h2.text-center Login User
+            form(action="/auth/login", method="POST")
+                div.col-md-6.offset-md-3.col-xs-6.offset-xs-3.form-group
+                    input(type="text", name="username" placeholder="Username :" class="form-control")
+                div.col-md-6.offset-md-3.col-xs-6.offset-xs-3.form-group
+                    input(type="password", name="password" placeholder="Password :" class="form-control")
+                div.col-md-6.offset-md-3.col-xs-6.offset-xs-3.form-group
+                    button(type="submit", class="btn btn-primary") Login

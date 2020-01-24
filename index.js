@@ -31,7 +31,7 @@ require('./src/index')(app, passport)
 mongoose.connect('mongodb://localhost:27017/auth', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useFindAndModify: false
+    useFindAndModify: false,
     // user: 'admin',
     // pass: 'abc123.'
 })
